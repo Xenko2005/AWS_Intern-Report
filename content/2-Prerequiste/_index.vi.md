@@ -53,6 +53,8 @@ pre : " <b> 2. </b> "
 
 ## 3. Kiến trúc giải pháp
 
+Đây là sơ đồ kiến trúc đám mây của hệ thống:
+![Networking Session](/AWS_Intern-Report/images/aws_architecture.drawio.png)
 **Dịch vụ AWS sử dụng**
 
 | Dịch vụ AWS | Chức năng chính |

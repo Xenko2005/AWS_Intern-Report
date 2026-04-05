@@ -53,6 +53,9 @@ To solve the growing online scam issues and the lack of a reliable verification 
 
 ## 3. Solution Architecture
 
+This is the cloud architecture diagram of the system:
+![Networking Session](/AWS_Intern-Report/images/aws_architecture.drawio.png)
+
 **AWS Services Used**
 
 | AWS Service | Main Function |
