@@ -12,21 +12,21 @@
     <title>Proposal :: AWS System Manager</title>
 
     
-    <link href="/AWS_Intern-Report/css/nucleus.css?1775314007" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/fontawesome-all.min.css?1775314007" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/hybrid.css?1775314007" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/featherlight.min.css?1775314007" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/perfect-scrollbar.min.css?1775314007" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/auto-complete.css?1775314007" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/atom-one-dark-reasonable.css?1775314007" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/theme.css?1775314007" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/hugo-theme.css?1775314007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/nucleus.css?1775378075" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/fontawesome-all.min.css?1775378075" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/hybrid.css?1775378075" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/featherlight.min.css?1775378075" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/perfect-scrollbar.min.css?1775378075" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/auto-complete.css?1775378075" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/atom-one-dark-reasonable.css?1775378075" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/theme.css?1775378075" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/hugo-theme.css?1775378075" rel="stylesheet">
     
-    <link href="/AWS_Intern-Report/css/theme-workshop.css?1775314007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/theme-workshop.css?1775378075" rel="stylesheet">
     
     
 
-    <script src="/AWS_Intern-Report/js/jquery-3.3.1.min.js?1775314007"></script>
+    <script src="/AWS_Intern-Report/js/jquery-3.3.1.min.js?1775378075"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -138,14 +138,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS_Intern-Report/js/lunr.min.js?1775314007"></script>
-<script type="text/javascript" src="/AWS_Intern-Report/js/auto-complete.js?1775314007"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/lunr.min.js?1775378075"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/auto-complete.js?1775378075"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/AWS_Intern-Report\/";
     
 </script>
-<script type="text/javascript" src="/AWS_Intern-Report/js/search.js?1775314007"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/search.js?1775378075"></script>
 
     
   </div>
@@ -1666,7 +1666,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color="orange">04-04-2026</font></i>
+        <i><font color="orange">05-04-2026</font></i>
     </left>
     <left>
         <br>
@@ -1742,13 +1742,33 @@
             <nav id="TableOfContents">
   <ul>
     <li><a href="#1-executive-summary">1. Executive Summary</a></li>
-    <li><a href="#2-problem-statement">2. Problem Statement</a></li>
-    <li><a href="#3-solution-architecture">3. Solution Architecture</a></li>
-    <li><a href="#4-technical-implementation">4. Technical Implementation</a></li>
+    <li><a href="#2-problem-statement">2. Problem Statement</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#3-solution-architecture">3. Solution Architecture</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#4-technical-deployment-roadmap">4. Technical Deployment Roadmap</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#5-roadmap--milestones">5. Roadmap &amp; Milestones</a></li>
     <li><a href="#6-budget-estimation">6. Budget Estimation</a></li>
-    <li><a href="#7-risk-assessment--mitigation">7. Risk Assessment &amp; Mitigation</a></li>
-    <li><a href="#8-expected-outcomes">8. Expected Outcomes</a></li>
+    <li><a href="#7-risk-assessment--mitigation">7. Risk Assessment &amp; Mitigation</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#8-expected-outcomes">8. Expected Outcomes</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#9-conclusion">9. Conclusion</a></li>
   </ul>
 </nav>
@@ -1800,242 +1820,468 @@
 
 
 	<h2 id="1-executive-summary">1. Executive Summary</h2>
-<p><strong>AnTiScaQ</strong> is an integrated threat intelligence platform designed to protect users by verifying the reputation and risk level of phone numbers, emails, and domains. The system automates the entire OSINT (Open Source Intelligence) workflow from data scraping, crowdsourced reporting, threat scoring. This is an <strong>in-house project</strong> developed by the team, focusing on an <strong>MVP with optimized costs under $50/month</strong> in the initial phase, utilizing Lambda, API Gateway, and DynamoDB to ensure high performance during traffic spikes and keep operating costs minimal.</p>
+<p><strong>AnTiScaQ</strong> is an online scam risk-checking system that helps users early detect signs of scams through various input data types such as <strong>phone numbers, domains, and email contents</strong> by verifying credibility and alerting based on risk levels. The system does not provide legal conclusions but serves as a warning, explanation, and prevention guide. The system collects data, receives community reports, and scores risks.</p>
 <h2 id="2-problem-statement">2. Problem Statement</h2>
-<p><strong>Current Issues</strong></p>
+<h4 id="current-issues">Current Issues</h4>
 <ul>
-<li>Users rely on manual Google searches or fragmented databases to check suspicious numbers or links, causing time waste and high exposure to fraud.</li>
-<li>Threat intelligence data gathering is <strong>not integrated</strong> and highly manual.</li>
-<li>No <strong>automated verification workflows</strong> to cross-check reported scams.</li>
-<li>High costs for enterprise threat intelligence feeds (e.g., Recorded Future, VirusTotal).</li>
-<li>Weak reporting mechanisms, <strong>not real-time</strong> when new phishing campaigns launch.</li>
+<li>Online scams are rapidly increasing and becoming more sophisticated, causing significant damage to users and businesses.</li>
+<li>Lack of a reliable system, making it easy to make wrong decisions.</li>
+<li>Users often have to manually search via browsers (Google, Microsoft Edge, &hellip;) or use fragmented databases to check suspicious phone numbers/links, causing time waste and risks.</li>
+<li>Current tools often lack <strong>contextual content analysis</strong>.
+<ul>
+<li>Lack of data <strong>from the user community</strong>.</li>
+<li>Do not provide <strong>clear explanations of risk levels</strong>.</li>
 </ul>
-<p><strong>Proposed Solution</strong>
-The system uses <strong>AWS Serverless Architecture</strong> to optimize costs and handle variable traffic:</p>
-<ul>
-<li><strong>Compute:</strong> AWS Lambda (pay-per-use, utilizing Python for scraping and Node.js for APIs).</li>
-<li><strong>API:</strong> API Gateway REST API.</li>
-<li><strong>Database:</strong> DynamoDB (on-demand billing for lightning-fast lookups).</li>
-<li><strong>Cache:</strong> ElastiCache Redis (cache.t3.micro) - optional for phase 2 to cache popular scam domains.</li>
-<li><strong>Authentication:</strong> AWS Cognito (free tier &lt;50K MAU) for API key management and admin access.</li>
-<li><strong>Storage:</strong> S3 for scraping logs and evidence, CloudFront CDN.</li>
-<li><strong>CI/CD:</strong> GitHub Actions for automated deployment.</li>
-<li><strong>Monitoring:</strong> CloudWatch (free tier).</li>
-<li><strong>Security:</strong> Route 53, WAF (cost-optimized rules to prevent API abuse), IAM Roles.</li>
+</li>
+<li>Extremely high costs to purchase APIs from enterprise Threat Intel platforms (like Recorded Future, VirusTotal).</li>
+<li>Incomplete reporting, <strong>not real-time</strong> when new phishing campaigns break out.</li>
 </ul>
-<p><strong>Key Features</strong></p>
+<h4 id="proposed-solution">Proposed Solution</h4>
+<p>To solve the growing online scam issues and the lack of a reliable verification system, AnTiScaQ proposes a platform based on a <strong>Hybrid Cloud-Native</strong> architecture with the following main directions:</p>
 <ul>
-<li><strong>Single Sign-On</strong> (Google, Microsoft 365) for admins and contributors.</li>
-<li><strong>Detailed RBAC</strong> (Admin, Moderator, API Consumer, Public User).</li>
-<li><strong>Real-time lookup API</strong> for domains, emails, and phone numbers.</li>
-<li><strong>Approval workflows</strong> for user-submitted scam reports to prevent false positives.</li>
-<li><strong>Web portal</strong> (Next.js) for public search and crowdsourced reporting.</li>
+<li>
+<p><strong>Automated risk detection:</strong> Multi-source analysis (phone, domain, URL, email content) combining rule-based and AI to detect early scam signs.</p>
+</li>
+<li>
+<p><strong>AI Contextual Analysis:</strong> Using Amazon Bedrock to understand content and provide clear explanations of risk levels, helping users make decisions easily.</p>
+</li>
+<li>
+<p><strong>Leveraging community power:</strong> Building a reporting and reputation scoring system based on user contributions, keeping data updated and reflecting reality.</p>
+</li>
+<li>
+<p><strong>Cost &amp; Scalability Optimization:</strong> Applying a Hybrid architecture:</p>
+<ul>
+<li>Elastic Beanstalk (Docker) for the main backend</li>
+<li>Lambda for AI &amp; flexible processing
+→ Reduces costs compared to traditional enterprise systems.</li>
+</ul>
+</li>
+<li>
+<p><strong>AWS Ecosystem Integration:</strong> Using Cognito, RDS, DynamoDB, S3, CloudFront, WAF… to ensure security, performance, and scalability.</p>
+</li>
+<li>
+<p><strong>Simple User Experience:</strong> Providing a single platform replacing manual searches, enabling fast and accurate checks.</p>
+</li>
 </ul>
 <p><strong>Benefits</strong></p>
 <ul>
-<li>Save <strong>70%</strong> of manual checking and data aggregation time.</li>
-<li>Reduce <strong>90%</strong> of false positive threat classifications.</li>
-<li>Cost only <strong>below $50/month</strong> for initial scale (90% cheaper than commercial Threat Intel feeds).</li>
-<li><strong>In-house development</strong> - no external data licensing or outsourcing costs.</li>
+<li>Early detection of scam signs from multiple data sources (phone, domain, content).</li>
+<li>Provide clear, easy-to-understand risk alerts.</li>
+<li>Save time through automated checking.</li>
+<li>Leverage community data to increase accuracy.</li>
+<li>Protect users while browsing the web.</li>
+<li>Raise awareness and scam prevention skills.</li>
+<li>Improve security: Through continuous monitoring and real-time alerts.</li>
 </ul>
 <h2 id="3-solution-architecture">3. Solution Architecture</h2>
 <p><strong>AWS Services Used</strong></p>
-<ul>
-<li><strong>AWS Lambda:</strong> Backend API logic (Node.js 20.x) &amp; automated web scrapers (Python).</li>
-<li><strong>API Gateway:</strong> REST API endpoints, request validation, rate limiting.</li>
-<li><strong>Amazon DynamoDB:</strong> NoSQL database (on-demand billing) for threat records.</li>
-<li><strong>AWS Cognito:</strong> Authentication, SSO, API Keys, JWT tokens.</li>
-<li><strong>Amazon S3:</strong> Raw data storage (scraping logs, screenshot evidence).</li>
-<li><strong>CloudFront:</strong> CDN for static Next.js assets and S3.</li>
-<li><strong>Route 53:</strong> DNS management.</li>
-<li><strong>AWS WAF</strong> (optional Phase 2): API protection against botnets.</li>
-<li><strong>CloudWatch:</strong> Logs, monitoring (free tier).</li>
-<li><strong>Secrets Manager:</strong> API keys for third-party integrations and proxy credentials.</li>
-</ul>
-<p><strong>Component Design</strong></p>
-<ul>
-<li><strong>Authentication Layer:</strong> Cognito User Pools with JWT (RS256); Lambda authorizer for API Gateway to validate API keys.</li>
-<li><strong>API Layer:</strong> AWS Lambda functions deployed via GitHub Actions; API Gateway REST API with rate limiting (e.g., 10 requests/second per free tier user).</li>
-<li><strong>Business Logic (Lambda Functions):</strong> * Threat lookups (Read from DynamoDB/Cache).
-<ul>
-<li>Data Aggregation (Python scrapers pulling from public blacklists).</li>
-<li>Report management (CRUD for user-submitted scams).</li>
-<li>Email notifications (SES free tier for threat alerts).</li>
-</ul>
-</li>
-<li><strong>Data Layer - DynamoDB Tables:</strong>
-<ul>
-<li><code>Users</code> - GSI on email</li>
-<li><code>ThreatIntel</code> - GSI on <code>indicator_type</code> (phone/email/domain) + <code>risk_score</code></li>
-<li><code>ScamReports</code> - GSI on <code>target_indicator</code> + <code>date</code></li>
-<li><code>ScrapingLogs</code> - GSI on <code>source</code> + <code>status</code></li>
-</ul>
-</li>
-<li><strong>Storage Layer:</strong> S3 Standard for evidence (&lt;30 days); S3 Lifecycle → Glacier Deep Archive (&gt;90 days) for historical logs.</li>
-<li><strong>Frontend:</strong> Next.js 14 (React 18) + TypeScript - Static export; Material-UI components; Hosted on CloudFront + S3.</li>
-<li><strong>CI/CD Pipeline:</strong> GitHub Actions workflow to build Lambda packages, deploy via AWS CLI, and sync frontend to S3.</li>
-</ul>
-<h2 id="4-technical-implementation">4. Technical Implementation</h2>
-<p><strong>Phase 1: MVP Core (Month 1-2)</strong></p>
-<ul>
-<li><strong>Month 1:</strong> AWS setup (Cognito, DynamoDB, S3, Lambda). Authentication UI. Threat CRUD APIs and admin dashboard.</li>
-<li><strong>Month 2:</strong> Public lookup APIs. Next.js web portal MVP. Manual report submission workflow. Basic trending dashboard.</li>
-</ul>
-<p><strong>Phase 2: Automation &amp; Data Aggregation (Month 3-4)</strong></p>
-<ul>
-<li><strong>Month 3:</strong> Python web scraping engine (Lambda) to automate blacklist data collection. Reputation scoring logic.</li>
-<li><strong>Month 4:</strong> Email notifications (SES) for subscribed alerts. Audit logging. Evidence upload to S3.</li>
-</ul>
-<p><strong>Phase 3: Advanced Features (Month 5-6)</strong></p>
-<ul>
-<li>AI/ML Risk Scoring module (predictive analysis based on patterns).</li>
-<li>Advanced threat analytics dashboard.</li>
-<li>Security hardening (WAF integration).</li>
-<li>Load testing for high-volume lookup queries.</li>
-<li>Public API documentation launch.</li>
-</ul>
-<p><strong>Tech Stack</strong></p>
-<ul>
-<li><strong>Backend:</strong> Node.js 20.x, Python 3.11 (Scraping), AWS Lambda.</li>
-<li><strong>Database:</strong> DynamoDB (single-table design pattern).</li>
-<li><strong>Frontend:</strong> Next.js 14, React 18, TypeScript, Material-UI v5.</li>
-<li><strong>Infrastructure as Code:</strong> AWS SAM / Serverless Framework.</li>
-<li><strong>CI/CD:</strong> GitHub Actions.</li>
-</ul>
-<h2 id="5-roadmap--milestones">5. Roadmap &amp; Milestones</h2>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Month</th>
-          <th style="text-align: left">Phase</th>
-          <th style="text-align: left">Key Deliverables</th>
+          <th style="text-align: left">AWS Service</th>
+          <th style="text-align: left">Main Function</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">1-2</td>
-          <td style="text-align: left">MVP Core</td>
-          <td style="text-align: left">Auth, Threat Database, Public Search Portal, Manual Reporting</td>
+          <td style="text-align: left"><strong>AWS Elastic Beanstalk</strong></td>
+          <td style="text-align: left">Deploy and manage the backend application (Spring Boot) as Docker containers</td>
       </tr>
       <tr>
-          <td style="text-align: left">3-4</td>
-          <td style="text-align: left">Automation</td>
-          <td style="text-align: left">Python Scraping Engine, API Keys, Alert Notifications</td>
+          <td style="text-align: left"><strong>Amazon RDS for MySQL</strong></td>
+          <td style="text-align: left">Relational database, storing structured data (user, report, domain, history, &hellip;)</td>
       </tr>
       <tr>
-          <td style="text-align: left">5-6</td>
-          <td style="text-align: left">Advanced &amp; Launch</td>
-          <td style="text-align: left">AI Scoring, Advanced Analytics, Security Hardening, API Go-Live</td>
+          <td style="text-align: left"><strong>AWS Lambda</strong></td>
+          <td style="text-align: left">Process serverless tasks (AI chatbot, content analysis, asynchronous processing)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Amazon API Gateway</strong></td>
+          <td style="text-align: left">Manage and expose APIs, handle request routing, validation, and endpoint security</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Amazon DynamoDB</strong></td>
+          <td style="text-align: left">NoSQL database, storing temporary/real-time data (OTP)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>AWS Cognito</strong></td>
+          <td style="text-align: left">User authentication and authorization (Authentication &amp; Authorization, supports Google SSO)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Amazon S3</strong></td>
+          <td style="text-align: left">File storage (images, documents, static assets)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Amazon CloudFront</strong></td>
+          <td style="text-align: left">CDN for content delivery (frontend, files from S3), reducing latency and speeding up load times</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Amazon Route 53</strong></td>
+          <td style="text-align: left">DNS management, mapping domains to the system</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>AWS WAF</strong></td>
+          <td style="text-align: left">Protect APIs from attacks (rate limiting, anti-bot, anti-abuse)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Amazon CloudWatch</strong></td>
+          <td style="text-align: left">System monitoring, logs, metrics, and alerts</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Amazon SNS</strong></td>
+          <td style="text-align: left">Send notifications (email, SMS) to the system and users</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Amazon Bedrock</strong></td>
+          <td style="text-align: left">Provide AI/LLM for chatbot and scam content analysis</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>AWS Secrets Manager</strong></td>
+          <td style="text-align: left">Manage sensitive security information (API keys, credentials)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>AWS CodePipeline</strong></td>
+          <td style="text-align: left">Automate CI/CD pipeline (build → test → deploy)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>AWS CodeBuild</strong></td>
+          <td style="text-align: left">Build and test service in the CI/CD pipeline</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="component-design">Component Design</h4>
+<p><strong>1. Data Collection &amp; Detection Layer</strong></p>
+<ul>
+<li><strong>Data Sources:</strong> Collect data from multiple sources including user input (phone, domain, email content), community data (reports, feedback), and external APIs (WHOIS domain).</li>
+<li><strong>Ingestion:</strong> The backend (Spring Boot on Elastic Beanstalk) receives and standardizes data, automatically triggering analysis tasks when new data arrives.</li>
+</ul>
+<p><strong>2. Event Processing Layer</strong></p>
+<ul>
+<li><strong>Routing &amp; Logic:</strong> API Gateway receives client requests and routes them to the backend, which handles validation, business logic, and request classification.</li>
+<li><strong>Async &amp; Events:</strong> Asynchronous tasks (AI analysis, content processing) are pushed to AWS Lambda, with event-driven processing handled via SNS (notifications) or internal services.</li>
+</ul>
+<p><strong>3. Orchestration &amp; Business Logic Layer</strong></p>
+<ul>
+<li><strong>Core Orchestration:</strong> The backend acts as the main orchestrator, seamlessly managing the processing flow from input → analysis → result delivery.</li>
+<li><strong>Processing Tasks:</strong> It aggregates data from multiple sources (RDS, DynamoDB, external APIs), calls Lambda to analyze content/violations via AI, calculates risk scores, and classifies risk levels.</li>
+</ul>
+<p><strong>4. Data Processing &amp; Storage Layer</strong></p>
+<ul>
+<li><strong>Data Storage:</strong> Utilize Amazon RDS (MySQL) for primary data (user, report, domain, history), Amazon DynamoDB for fast data (OTP), and Amazon S3 for file storage (images, documents).</li>
+<li><strong>Processing Support:</strong> AWS Lambda supports supplementary data processing, including light ETL and preprocessing for AI.</li>
+</ul>
+<p><strong>5. AI &amp; Analysis Layer</strong></p>
+<ul>
+<li><strong>AI Capabilities:</strong> Amazon Bedrock provides robust AI models to analyze email content, phone numbers, and domain names, explain risk levels, and power a chatbot for scam prevention consulting.</li>
+<li><strong>Integration:</strong> AWS Lambda acts as the secure intermediary to call Bedrock and process its analytical results.</li>
+</ul>
+<p><strong>6. Presentation &amp; User Interaction Layer</strong></p>
+<ul>
+<li><strong>User Interface:</strong> The Frontend (React) is deployed via S3 + CloudFront, communicating securely with the backend via API Gateway.</li>
+<li><strong>Access Control:</strong> User authentication and sessions are managed via AWS Cognito (JWT).</li>
+</ul>
+<p><strong>7. Security &amp; Monitoring Layer</strong></p>
+<ul>
+<li><strong>Security &amp; Access:</strong> Implement Authentication via AWS Cognito (SSO, JWT) and manage overall security using AWS WAF, IAM, ACM (SSL), and Route 53 (DNS).</li>
+<li><strong>Operations:</strong> System monitoring is handled by Amazon CloudWatch (logs, metrics) and SNS (alerts), while credentials are encrypted and managed by AWS Secrets Manager.</li>
+</ul>
+<h2 id="4-technical-deployment-roadmap">4. Technical Deployment Roadmap</h2>
+<p><strong>Step 1: Infrastructure &amp; Platform Setup</strong></p>
+<ul>
+<li><strong>Network &amp; Security:</strong> Setup VPC (Public Subnet for LB/Internet, Private Subnet for RDS), configure Internet Gateway, and set up Security Groups (Beanstalk: HTTP/HTTPS, RDS: Backend access only).</li>
+<li><strong>Core Deployment:</strong> Deploy Spring Boot Backend as Docker containers on AWS Elastic Beanstalk. Provision Amazon RDS (MySQL) for main data, DynamoDB for OTP, and S3 for file/image storage.</li>
+<li><strong>Base Services:</strong> Setup AWS Cognito (Authentication + Google SSO), build basic APIs (Auth, Threat CRUD, Report), and build Admin Dashboard APIs.</li>
+</ul>
+<p><strong>Step 2: APIs &amp; Web Portal MVP</strong></p>
+<ul>
+<li><strong>Public Services:</strong> Build Public Lookup APIs (Check phone, domain, content).</li>
+<li><strong>Frontend:</strong> Deploy React.js application on Amazon S3 + CloudFront.</li>
+<li><strong>Features &amp; Routing:</strong> Build scam reporting workflow, basic statistical dashboard, and configure Route 53 for domain mapping.</li>
+</ul>
+<p><strong>Step 3: Data Processing &amp; Core Logic</strong></p>
+<ul>
+<li><strong>Logic Systems:</strong> Integrate WHOIS API for domain checking. Build systems for Risk scoring (rule-based + community) and Risk level classification.</li>
+<li><strong>AI &amp; Async:</strong> Integrate AWS Lambda + Amazon Bedrock to handle Email content analysis, Consulting Chatbot, and Asynchronous processing.</li>
+</ul>
+<p><strong>Step 4: System Finalization &amp; Advanced Frontend</strong></p>
+<ul>
+<li><strong>UI/UX Refinement:</strong> Refine the Detailed Dashboard and Check history interfaces.</li>
+<li><strong>Integrations:</strong> Develop and integrate a Browser extension for real-time website warnings.</li>
+<li><strong>Enhancements:</strong> Optimize API responses and overall user experience.</li>
+</ul>
+<p><strong>Step 5: Testing, Security &amp; Optimization</strong></p>
+<ul>
+<li><strong>Testing:</strong> Execute Unit tests, Integration tests, and Load testing.</li>
+<li><strong>Security:</strong> Implement AWS WAF to prevent API abuse, configure IAM Roles for strict authorization, and provision AWS ACM for SSL/TLS certificates.</li>
+<li><strong>Optimization:</strong> Enable Auto Scaling for Elastic Beanstalk, configure CloudFront caching, and perform Query optimization on RDS.</li>
+</ul>
+<h4 id="technical-requirements">Technical Requirements</h4>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Component</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Frontend &amp; Dashboard</strong></td>
+          <td style="text-align: left">The interface uses the Next.js framework, hosted statically on Amazon S3 and distributed globally at high speed via the CloudFront CDN network.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Backend &amp; Logic Processing</strong></td>
+          <td style="text-align: left">Core logic is programmed in Python 3.12 running on the AWS Lambda platform and routed through Amazon API Gateway.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Data &amp; Storage</strong></td>
+          <td style="text-align: left">System data uses Amazon DynamoDB to ensure lightning-fast query speeds, combined with Amazon S3 to securely store evidence files.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Infrastructure (IaC)</strong></td>
+          <td style="text-align: left">All AWS infrastructure resources are defined and managed entirely as code via the AWS Cloud Development Kit (CDK).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Security &amp; Monitoring</strong></td>
+          <td style="text-align: left">The system applies AWS Cognito multi-factor authentication, strictly manages permissions via IAM, and is continuously monitored and logged by Amazon CloudWatch.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>CI/CD</strong></td>
+          <td style="text-align: left">AWS CodePipeline (automated pipeline), AWS CodeBuild (build &amp; test)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="5-roadmap--milestones">5. Roadmap &amp; Milestones</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Week</th>
+          <th style="text-align: left">Phase</th>
+          <th style="text-align: left">Key Activities</th>
+          <th style="text-align: left">Deliverables</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>1-2</strong></td>
+          <td style="text-align: left">Platform (MVP Core)</td>
+          <td style="text-align: left">AWS setup (VPC, Subnet, Security Group), deploy Beanstalk + RDS, configure Cognito, build basic APIs</td>
+          <td style="text-align: left">Auth, Threat API, Report completed, backend successfully deployed</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>3-4</strong></td>
+          <td style="text-align: left">APIs &amp; Automation</td>
+          <td style="text-align: left">Build lookup APIs (phone, domain, URL), integrate WHOIS, configure notifications (SNS), setup CI/CD</td>
+          <td style="text-align: left">Lookup APIs operational, Web portal MVP, CI/CD pipeline</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>5-6</strong></td>
+          <td style="text-align: left">AI &amp; Advanced</td>
+          <td style="text-align: left">Integrate Lambda + Bedrock, content analysis, AI risk scoring, asynchronous processing</td>
+          <td style="text-align: left">AI Chatbot, content analysis, advanced risk scoring</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>7-8</strong></td>
+          <td style="text-align: left">Dashboard &amp; Integration</td>
+          <td style="text-align: left">Build admin dashboard, statistics API, refine frontend, extension integration</td>
+          <td style="text-align: left">Admin dashboard, completed interface</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>9-10</strong></td>
+          <td style="text-align: left">System Optimization</td>
+          <td style="text-align: left">Performance optimization (Auto Scaling, CloudFront), database query optimization, API improvements</td>
+          <td style="text-align: left">Stable system, improved performance</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>11</strong></td>
+          <td style="text-align: left">Security</td>
+          <td style="text-align: left">Configure WAF, IAM, SSL (ACM), logging with CloudWatch, security testing</td>
+          <td style="text-align: left">Fully secured system</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>12</strong></td>
+          <td style="text-align: left">Testing</td>
+          <td style="text-align: left">Unit test, integration test, load test, end-to-end testing, bug fixing</td>
+          <td style="text-align: left">Test reports, stable system</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>13</strong></td>
+          <td style="text-align: left">Handover</td>
+          <td style="text-align: left">Write documentation (APIs, architecture), system demo, GitHub standardization</td>
+          <td style="text-align: left">Complete documentation, demo, project handover</td>
       </tr>
   </tbody>
 </table>
 <h2 id="6-budget-estimation">6. Budget Estimation</h2>
-<p><strong>Monthly AWS Costs (Phase 1: ~5,000 API lookups/day)</strong>
-<em>Serverless Architecture - Cost Optimized</em></p>
-<ul>
-<li><strong>AWS Lambda:</strong> 150K invocations -&gt; $0 (Within free tier)</li>
-<li><strong>API Gateway:</strong> 150K requests -&gt; $0.15</li>
-<li><strong>DynamoDB:</strong> On-demand, 5GB storage, 1M reads, 500K writes -&gt; $3.50</li>
-<li><strong>S3 Storage &amp; Requests:</strong> 20GB data -&gt; $0.60</li>
-<li><strong>S3 Glacier (archive):</strong> 10GB logs -&gt; $0.10</li>
-<li><strong>CloudFront:</strong> 10GB transfer, 200K requests -&gt; $1.00</li>
-<li><strong>Route 53:</strong> 1 hosted zone -&gt; $0.90</li>
-<li><strong>CloudWatch &amp; Cognito:</strong> -&gt; $0 (Within free tier)</li>
-<li><strong>Secrets Manager &amp; SES:</strong> -&gt; $0.85</li>
-<li><strong>Data Transfer &amp; Contingency:</strong> -&gt; $1.20</li>
-<li><strong>TOTAL AWS/MONTH (Phase 1): ~$8.30</strong></li>
-</ul>
-<p><strong>Costs When Scaling to Phase 2 (Automation + Caching)</strong></p>
-<ul>
-<li><strong>Lambda + API Gateway:</strong> 300K requests -&gt; $0.30</li>
-<li><strong>DynamoDB:</strong> 10GB, 2M reads -&gt; $9.50</li>
-<li><strong>S3 + CloudFront:</strong> 40GB storage -&gt; $2.50</li>
-<li><strong>ElastiCache Redis (optional):</strong> cache.t3.micro -&gt; $12.50</li>
-<li><strong>AWS WAF (optional):</strong> Basic protection -&gt; $7.00</li>
-<li><strong>Misc + Contingency:</strong> -&gt; $5.60</li>
-<li><strong>TOTAL (Phase 2, with cache/WAF): ~$37.40</strong> <em>(~$17.90 without cache/WAF)</em></li>
-</ul>
-<p><strong>Costs When Scaling to Phase 3 (High Volume APIs)</strong></p>
-<ul>
-<li><strong>TOTAL (Phase 3 - 750k+ lookups, larger cache, WAF rules): ~$87.50 / month</strong></li>
-</ul>
-<p><strong>ROI Analysis (In-house project)</strong></p>
-<ul>
-<li><strong>Initial Investment:</strong> Setup &amp; Dev tools (<del>$42) + AWS Dev environment (</del>$30) = <strong>~$72</strong></li>
-<li><strong>First Year Operating Costs:</strong> Phase 1 (6 months) + Phase 2 (6 months) = <strong>~$210</strong></li>
-<li><strong>Total Year 1 Cost:</strong> <strong>~$282</strong></li>
-<li><strong>Savings:</strong> Commercial Threat Intel APIs easily cost $10,000 - $30,000/year. Building this aggregator in-house saves thousands of dollars annually while providing a proprietary dataset.</li>
-</ul>
+<p><strong>Monthly AWS Costs</strong>
+<em>Serverless Architecture - Cost Optimization</em></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Service</th>
+          <th style="text-align: left">Configuration</th>
+          <th style="text-align: left">Cost/Month</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>AWS Lambda</strong></td>
+          <td style="text-align: left">15K invocations, 512MB, 4000ms avg</td>
+          <td style="text-align: left">$0 <em>(Free tier)</em></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">↳ Free tier: 1M requests + 400K GB-seconds/month</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>API Gateway</strong></td>
+          <td style="text-align: left">15K REST API requests</td>
+          <td style="text-align: left">$0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>DynamoDB</strong></td>
+          <td style="text-align: left">On-demand, 5GB storage, 1M reads, 0.5M write</td>
+          <td style="text-align: left">$0.5</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>S3 Vector Bucket</strong></td>
+          <td style="text-align: left">2GB data, PUT/GET</td>
+          <td style="text-align: left">$0.60</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Bedrock</strong></td>
+          <td style="text-align: left">Model: Claude Haiku 3, Input Token: 6GB, Output Token: 4GB</td>
+          <td style="text-align: left">$6.5</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>CloudFront</strong></td>
+          <td style="text-align: left">10GB transfer, 200K requests</td>
+          <td style="text-align: left">$1.00</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Route 53</strong></td>
+          <td style="text-align: left">1 hosted zone</td>
+          <td style="text-align: left">$0.90</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>CloudWatch</strong></td>
+          <td style="text-align: left">Basic logs and Auth</td>
+          <td style="text-align: left">$0 <em>(Free tier)</em></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Secrets Manager</strong></td>
+          <td style="text-align: left">Proxy key management</td>
+          <td style="text-align: left">$0.4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Elastic Beanstalk (EC2)</strong></td>
+          <td style="text-align: left">t3.micro</td>
+          <td style="text-align: left">$11.68</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Cognito</strong></td>
+          <td style="text-align: left">1000 MAU</td>
+          <td style="text-align: left">$0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">↳ Free tier: &lt; 50K MAU</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>RDS my SQL</strong></td>
+          <td style="text-align: left">Buffer</td>
+          <td style="text-align: left">$5.85</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>WAF</strong></td>
+          <td style="text-align: left">Buffer</td>
+          <td style="text-align: left">$0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"><strong>TOTAL AWS/MONTH</strong></td>
+          <td style="text-align: left"><strong>~$27.43</strong></td>
+      </tr>
+  </tbody>
+</table>
 <h2 id="7-risk-assessment--mitigation">7. Risk Assessment &amp; Mitigation</h2>
 <table>
   <thead>
       <tr>
           <th style="text-align: left">Risk</th>
           <th style="text-align: left">Impact</th>
-          <th style="text-align: left">Probability</th>
           <th style="text-align: left">Mitigation</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><strong>Scraper IP Blocking</strong></td>
+          <td style="text-align: left"><strong>Backend &amp; RDS Overload (Spike traffic)</strong></td>
           <td style="text-align: left">High</td>
-          <td style="text-align: left">High</td>
-          <td style="text-align: left">Use rotating proxy pools (Secrets Manager) and randomize scraping intervals.</td>
+          <td style="text-align: left">Configure Auto Scaling for Elastic Beanstalk based on CPU/Network. Use Connection Pooling (like HikariCP) for Spring Boot to avoid crashing RDS.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>False Positives</strong></td>
+          <td style="text-align: left"><strong>Sudden Spike in Amazon Bedrock (AI) Costs</strong></td>
           <td style="text-align: left">High</td>
-          <td style="text-align: left">Medium</td>
-          <td style="text-align: left">Implement multi-source validation and manual approval workflows for high-profile domains.</td>
+          <td style="text-align: left">Set strict Rate Limiting at API Gateway/WAF. Limit <code>max_tokens</code> for the model. Cache duplicate content analysis results to avoid calling the AI API repeatedly.</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>DynamoDB costs spike</strong></td>
+          <td style="text-align: left"><strong>False Positives (Incorrect community reports)</strong></td>
+          <td style="text-align: left">High</td>
+          <td style="text-align: left">Apply a reputation scoring system (Trust score) for users. Require cross-verification from multiple sources (WHOIS, Rule-based) before AI issues official warnings.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Scraper / WHOIS API IP Block or Rate Limit</strong></td>
           <td style="text-align: left">Medium</td>
+          <td style="text-align: left">Use rotating proxy pools (proxy info securely stored in AWS Secrets Manager) and establish a Retry mechanism (Exponential Backoff) when calling external APIs.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Lambda Timeout during AI/Async processing</strong></td>
           <td style="text-align: left">Low</td>
-          <td style="text-align: left">On-demand billing, CloudWatch alarms at $30 threshold. Batch writes via SQS.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Lambda time limits</strong></td>
-          <td style="text-align: left">Low</td>
-          <td style="text-align: left">Medium</td>
-          <td style="text-align: left">Break heavy Python scraping jobs into smaller chunks; optimize bundle sizes.</td>
+          <td style="text-align: left">Decouple heavy Bedrock calls from the synchronous API flow. Communicate via Amazon SNS for Lambda to process in the background (async) and return results later. Optimize Lambda bundle size.</td>
       </tr>
   </tbody>
 </table>
+<h4 id="best-practices-for-cost--performance-optimization">Best practices for Cost &amp; Performance Optimization</h4>
+<ul>
+<li><strong>Elastic Beanstalk &amp; RDS:</strong> With a <code>t3.micro</code> instance, you need to optimize MySQL queries (proper indexing, avoid N+1 issues). Limit the number of connections from Spring Boot to RDS to optimize memory.</li>
+<li><strong>Lambda &amp; Bedrock:</strong> Keep the deployment file (bundle size) small. Initialize connections (HTTP clients, DB connections) outside the <em>handler function</em> to leverage reuse mechanisms, avoiding <em>cold starts</em>. Closely monitor Bedrock costs via AWS Budgets.</li>
+<li><strong>DynamoDB:</strong> Since you use DynamoDB primarily to store OTPs, configure the <strong>TTL (Time to Live)</strong> feature so the system automatically deletes expired OTP codes, saving maximum storage capacity. Using On-demand billing is reasonable for the MVP.</li>
+<li><strong>S3 &amp; CloudFront:</strong> Set up <em>Lifecycle policies</em> on S3 to automatically transition older evidence images or log files to cheaper storage classes (Glacier). Enable caching on CloudFront to reduce the number of direct requests to S3.</li>
+<li><strong>API Gateway &amp; WAF:</strong> Enable Response caching (30-60s) for public lookup APIs (Phone, Domain check) to reduce the backend load. It is mandatory to set up Throttling and WAF Rate-based rules to block bot spam or DDoS attacks from exhausting resources.</li>
+</ul>
 <h2 id="8-expected-outcomes">8. Expected Outcomes</h2>
-<p><strong>Technical Improvements</strong></p>
+<h4 id="technical-improvements">Technical Improvements</h4>
 <ul>
-<li><strong>90%</strong> of OSINT data collection automated via Python scrapers.</li>
-<li>Real-time threat dashboard with data &lt; 5 seconds old.</li>
-<li><strong>&lt; 1s</strong> API lookup response time (P95) with DynamoDB/Redis.</li>
-<li>Infinite scalability during widespread phishing campaigns (traffic spikes).</li>
+<li><strong>Automation &amp; High Speed:</strong> Completely replaces the cumbersome manual lookup process. The system detects, analyzes, and responds to results almost instantly (real-time).</li>
+<li><strong>AI Breakthroughs:</strong> Successfully applies Amazon Bedrock to &ldquo;understand&rdquo; the complex context of phishing content, vastly outperforming traditional rule-based keyword filters.</li>
+<li><strong>Flexible &amp; Resilient Infrastructure:</strong> The Hybrid Cloud-Native architecture (combining Beanstalk and Lambda) allows the system to seamlessly Auto Scale during traffic spikes without crashing or creating bottlenecks.</li>
+<li><strong>High Accuracy:</strong> Minimizes False Positives thanks to multi-source cross-verification mechanisms and a community reputation scoring system.</li>
 </ul>
-<p><strong>Business Value</strong></p>
+<h4 id="business-value">Business Value</h4>
 <ul>
-<li>Security team reduces <strong>60%</strong> manual investigation workload.</li>
-<li>Community protection increases with easy self-service lookups.</li>
-<li><strong>100%</strong> audit trail for reported indicators.</li>
-<li>Cost savings of <strong>$10,000+/year</strong> vs commercial alternatives.</li>
-<li>Operating cost only <strong>$8-12/month</strong> for initial scale.</li>
+<li><strong>Breakthrough Cost Optimization:</strong> Operates the entire system at an ultra-low cost (under $30/month), creating an absolute competitive advantage over purchasing expensive APIs from enterprise Threat Intel platforms.</li>
+<li><strong>Practical User Protection:</strong> Promptly prevents financial damage and personal data leaks through clear, easy-to-understand warnings.</li>
+<li><strong>Time-Saving:</strong> Saves thousands of lookup hours for the community thanks to an &ldquo;All-in-one&rdquo; checking platform.</li>
+<li><strong>Self-Sustaining Ecosystem:</strong> Attracts and builds an active community of users reporting threats, helping data to be continuously enriched automatically with zero collection costs.</li>
 </ul>
-<p><strong>Long-term Vision</strong></p>
+<h4 id="long-term-vision">Long-term Vision</h4>
 <ul>
-<li>Scale to handle millions of queries per month.</li>
-<li>Integrate AI/ML (AWS Bedrock) for predictive domain generation algorithm (DGA) detection.</li>
-<li>Potential SaaS product offering API keys to B2B clients.</li>
+<li><strong>Comprehensive Security Ecosystem:</strong> Expands coverage from the Web Portal to Browser Extensions and AI Chatbots, protecting users at every touchpoint in cyberspace.</li>
+<li><strong>Exclusive Threat Intelligence Database:</strong> Owns a highly specific and fastest-updating scam identification database, opening up B2B commercialization opportunities by providing APIs back to financial institutions and banks.</li>
+<li><strong>Predictive Artificial Intelligence:</strong> Upgrades the AI model from &ldquo;Detection&rdquo; to &ldquo;Prediction&rdquo;, capable of identifying sophisticated phishing campaigns from the moment they begin to form.</li>
 </ul>
 <h2 id="9-conclusion">9. Conclusion</h2>
-<p>The <strong>AnTiScaQ</strong> Platform with <strong>Serverless Architecture</strong> provides:</p>
+<p>The <strong>AnTiScaQ</strong> system with a <strong>Hybrid Cloud-Native</strong> architecture provides:</p>
 <ul>
-<li>✅ <strong>Ultra-low cost:</strong> Only $8-12/month for Phase 1.</li>
-<li>✅ <strong>No upfront cost:</strong> ~$72 setup, leveraging existing in-house team.</li>
-<li>✅ <strong>Massive ROI:</strong> Eliminates the need for expensive third-party Threat Intel feeds.</li>
-<li>✅ <strong>Scalable:</strong> Pay-as-you-go, automatically handles massive traffic spikes when new scams go viral.</li>
-<li>✅ <strong>Zero maintenance:</strong> Serverless = no server management.</li>
-<li>✅ <strong>Fast development:</strong> 6 months MVP → production.</li>
+<li><strong>Ultra-Optimized Costs:</strong> Extremely economical operation, only about <strong>~$27.43/month</strong> for the entire system.</li>
+<li><strong>No upfront cost:</strong> Maximizes AWS Free Tier and in-house team resources, requiring absolutely zero initial hardware investment.</li>
+<li><strong>Massive ROI:</strong> Completely eliminates the dependence and high costs of purchasing APIs from enterprise Threat Intel platforms.</li>
+<li><strong>Scalable:</strong> Flexible Auto Scaling capabilities (Beanstalk) combined with Serverless (Lambda), seamlessly handling traffic explosions caused by phishing campaigns.</li>
+<li><strong>Operational Optimization:</strong> Leverages the power of Managed Services and Serverless from the AWS ecosystem, minimizing the server administration burden.</li>
+<li><strong>Fast development:</strong> Rapid deployment roadmap, taking only about <strong>13 weeks (~3 months)</strong> from building to finalizing, testing, and handover.</li>
 </ul>
-<p>This is an <strong>ideal solution</strong> for building a robust, high-performance cybersecurity tool without massive upfront infrastructure investments.</p>
+<p>This is an <strong>ideal, groundbreaking, and practical</strong> solution to build an automated cybersecurity alert platform, harnessing community power and AI without requiring a massive infrastructure budget.</p>
 
 
 
@@ -2872,19 +3118,19 @@ The system uses <strong>AWS Serverless Architecture</strong> to optimize costs a
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS_Intern-Report/js/clipboard.min.js?1775314007"></script>
-    <script src="/AWS_Intern-Report/js/perfect-scrollbar.min.js?1775314007"></script>
-    <script src="/AWS_Intern-Report/js/perfect-scrollbar.jquery.min.js?1775314007"></script>
-    <script src="/AWS_Intern-Report/js/jquery.sticky.js?1775314007"></script>
-    <script src="/AWS_Intern-Report/js/featherlight.min.js?1775314007"></script>
-    <script src="/AWS_Intern-Report/js/highlight.pack.js?1775314007"></script>
+    <script src="/AWS_Intern-Report/js/clipboard.min.js?1775378075"></script>
+    <script src="/AWS_Intern-Report/js/perfect-scrollbar.min.js?1775378075"></script>
+    <script src="/AWS_Intern-Report/js/perfect-scrollbar.jquery.min.js?1775378075"></script>
+    <script src="/AWS_Intern-Report/js/jquery.sticky.js?1775378075"></script>
+    <script src="/AWS_Intern-Report/js/featherlight.min.js?1775378075"></script>
+    <script src="/AWS_Intern-Report/js/highlight.pack.js?1775378075"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS_Intern-Report/js/modernizr.custom-3.6.0.js?1775314007"></script>
-    <script src="/AWS_Intern-Report/js/learn.js?1775314007"></script>
-    <script src="/AWS_Intern-Report/js/hugo-learn.js?1775314007"></script>
+    <script src="/AWS_Intern-Report/js/modernizr.custom-3.6.0.js?1775378075"></script>
+    <script src="/AWS_Intern-Report/js/learn.js?1775378075"></script>
+    <script src="/AWS_Intern-Report/js/hugo-learn.js?1775378075"></script>
 
-    <link href="/AWS_Intern-Report/mermaid/mermaid.css?1775314007" rel="stylesheet" />
-    <script src="/AWS_Intern-Report/mermaid/mermaid.js?1775314007"></script>
+    <link href="/AWS_Intern-Report/mermaid/mermaid.css?1775378075" rel="stylesheet" />
+    <script src="/AWS_Intern-Report/mermaid/mermaid.js?1775378075"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

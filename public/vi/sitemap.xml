@@ -88,18 +88,6 @@
                 href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.1-introduction/"
                 />
   </url><url>
-    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.1-vpc-subnets/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.1-vpc-subnets/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.1-vpc-subnets/"
-                />
-  </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/4-s3log/4.1-event1/</loc>
     <xhtml:link
                 rel="alternate"
@@ -122,6 +110,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.6-cicd/5.6.1-codebuild/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.1-vpc-subnets/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.1-vpc-subnets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.1-vpc-subnets/"
                 />
   </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.4-data-layer/5.4.1-security-groups/</loc>
@@ -159,18 +159,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/AWS_Intern-Report/vi/2-prerequiste/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.2-nat-gateway/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.2-nat-gateway/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.2-nat-gateway/"
                 />
   </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.2-prerequisites/</loc>
@@ -219,6 +207,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/AWS_Intern-Report/vi/4-s3log/4.2-event2/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.2-nat-gateway/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.2-nat-gateway/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.2-nat-gateway/"
                 />
   </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.6-cicd/5.6.2-codepipeline/</loc>
@@ -282,18 +282,6 @@
                 href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.5-deploy-app/5.5.3-env-vars/"
                 />
   </url><url>
-    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.3-route-table/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.3-route-table/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.3-route-table/"
-                />
-  </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/4-s3log/4.3-event3/</loc>
     <xhtml:link
                 rel="alternate"
@@ -304,6 +292,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/AWS_Intern-Report/vi/4-s3log/4.3-event3/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.3-route-table/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.3-route-table/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.3-route-table/"
                 />
   </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.4-data-layer/5.4.3-elasticache/</loc>
