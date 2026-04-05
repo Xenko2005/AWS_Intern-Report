@@ -35,6 +35,13 @@
 	"content": "Create Build Project "
 },
 {
+	"uri": "http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.1-vpc-subnets/",
+	"title": "Create VPC",
+	"tags": [],
+	"description": "",
+	"content": " Open the VPC Console. Click Create VPC. VPC settings: Choose VPC and more.\nName tag auto-generation: Enter your desired name tag. VPC endpoints: Choose None. Click Create VPC.\n"
+},
+{
 	"uri": "http://localhost:1313/AWS_Intern-Report/4-s3log/4.1-event1/",
 	"title": "Event 1",
 	"tags": [],
@@ -42,18 +49,11 @@
 	"content": "AWS re:Invent Recap HCMC Date: January 29th, 2026\nLocation: Bitexco Financial Tower (26th Floor), No. 2, Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City\nAbout the Event Get the latest updates from AWS re:Invent 2025 right at our local shores! The Ho Chi Minh City re:Invent Recap provided an exclusive opportunity to deep dive into the latest product releases, service updates, and architectural best practices straight from AWS experts.\nBuilders, business leaders, and technical professionals gathered for a full day of hands-on workshops, technical sessions, and networking. The event equipped the community with the knowledge and connections to accelerate projects, explore strategic AI implementations, and drive innovation with AWS.\nTrack 2: Analytics / ML / AI \u0026amp; Innovation I attended Track 2, which was entirely focused on the cutting edge of Analytics, Machine Learning, and Generative AI. Here is a recap of the day\u0026rsquo;s agenda and my experiences:\n9:30 AM - 10:15 AM | ML/AI \u0026amp; Innovation Keynotes Kicked off the day with inspiring keynotes covering AWS\u0026rsquo;s vision for the future of AI and Machine Learning.\n10:15 AM - 11:00 AM | Get Started with Vector Database on S3 Hosted by the amazing Prapti Gupta. Her presentation style was exceptionally engaging—some might even say guests left more elated than visitors to Santa\u0026rsquo;s Workshop or the Fountain of Youth! A truly memorable session on leveraging S3 for vector storage.\n11:00 AM - 11:45 AM | Natural Query Language in OpenSearch Explored how natural language interfaces are lowering the barrier to querying large datasets, making data exploration more intuitive.\n11:45 AM - 1:00 PM | Lunch \u0026amp; Networking A great time to connect with peers navigating similar digital transformation journeys and share insights from the morning sessions.\n1:00 PM - 1:45 PM | Enhance GenAI Applications by Leveraging New Version of Nova \u0026amp; Bedrock Covered the powerful new capabilities introduced in Amazon Nova models and Bedrock APIs, enabling developers to build production-grade Generative AI applications faster.\n1:45 PM - 2:30 PM | Working with AWS Resources through MCP A fascinating deep dive into using the Model Context Protocol (MCP) to give AI agents grounded and secure access to live AWS resources.\n2:45 PM - 3:30 PM | Multimodal Retrieval for Bedrock Knowledge Bases Learned about advanced RAG pipelines combining text, image, and structured data to enrich applications with multimodal retrieval capabilities.\n3:30 PM - 4:15 PM | MLOps \u0026amp; Model Training at Scale with Amazon SageMaker AI Wrapped up the day with best practices for scalable model training and managing the entire ML lifecycle using SageMaker.\nThis event was a fantastic opportunity to engage with AWS leadership and peers, leaving us equipped and inspired for the coming year!\n"
 },
 {
-	"uri": "http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.1-vpc-subnets/",
-	"title": "Initialize VPC &amp; Subnets",
-	"tags": [],
-	"description": "",
-	"content": "Initialize VPC \u0026amp; Subnets "
-},
-{
 	"uri": "http://localhost:1313/AWS_Intern-Report/5-portfwd/5.1-introduction/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": "Introduction "
+	"content": "Introduction to AnTiScaQ (Anti-Scam Alert Platform) AnTiScaQ is a modern, automated anti-scam alert platform designed to protect users from increasingly sophisticated cybersecurity threats. At its core lies the power of open-source data intelligence, utilizing robust scraping engines to deep-dive analyze and verify the risk levels of suspicious phone numbers, email contents, and domains. The groundbreaking differentiator of AnTiScaQ is its ability to provide real-time risk scoring, enabling the immediate detection, evaluation, and issuance of alerts the moment phishing campaigns break out. This continuous process enriches the threat intelligence database, maximizing safety for users and the community.\nAWS Solution Architecture Overview Solution Architecture:\nThe AnTiScaQ ecosystem is built upon a Serverless architecture model, comprehensively leveraging the elite services of the AWS cloud platform to deliver highly elastic scalability and drastically minimize operational costs. Strictly adhering to the core pillars of the AWS Well-Architected Framework, this solution ensures the system remains resilient, secure, and ready to instantly handle massive traffic surges during sudden phishing outbreaks.\nCompute \u0026amp; Logic Layer At the heart of the processing layer, the platform utilizes the combined power of Amazon API Gateway and AWS Lambda as its primary compute engine, operating entirely without server management. Within this architecture, compute functions shoulder the responsibility of processing high-speed REST API queries against the threat database, while specialized Python functions seamlessly execute asynchronous open-source data scraping workflows.\nData \u0026amp; Persistence Layer To solve the challenge of real-time retrieval performance, the system relies on Amazon DynamoDB as its central NoSQL database, applying single-table design techniques to store threat intelligence profiles with sub-second latency. Accompanying the database layer is Amazon S3, configured as a secure repository for unstructured data such as forensic image evidence, while simultaneously acting as the host for all static assets of the web portal interface.\nSecurity \u0026amp; Authentication To establish a formidable defense perimeter, the architecture deeply integrates Amazon Cognito for identity management, supporting highly granular authentication and Role-Based Access Control (RBAC). Alongside this, AWS Secrets Manager serves as a secure vault to automatically store and rotate sensitive information like database credentials and API tokens. Meanwhile, the AWS WAF firewall operates on the frontline to shield API endpoints from botnet abuse and Distributed Denial of Service (DDoS) attacks.\nDevOps \u0026amp; Monitoring To maintain the pace of feature releases and ensure quality, the entire build and deployment lifecycle (CI/CD) is fully automated end-to-end via GitHub Actions. On the network delivery front, Amazon CloudFront CDN is deployed in tandem with Amazon S3 to deliver the web interface content at maximum speed to global users. Finally, every system state—from API rate limits to scraping processes—is closely monitored by the duo of Amazon CloudWatch and Amazon SNS, automatically triggering instant alert workflows upon detecting errors or anomalous cost thresholds.\n"
 },
 {
 	"uri": "http://localhost:1313/AWS_Intern-Report/5-portfwd/5.8-monitoring/5.8.1-cloudwatch/",
@@ -92,10 +92,10 @@
 },
 {
 	"uri": "http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.2-nat-gateway/",
-	"title": "Configure Internet &amp; NAT Gateway",
+	"title": "Create Security Group",
 	"tags": [],
 	"description": "",
-	"content": "Configure Internet \u0026amp; NAT Gateway "
+	"content": " Open the EC2 Console. Choose Security Groups from the navigation pane and click Create security group. Security group name: Enter a name for your security group.\nVPC: Choose the VPC you created earlier.\nInbound rules: Create the inbound rules as shown below. Repeat steps 2-5 to create another security group if needed. "
 },
 {
 	"uri": "http://localhost:1313/AWS_Intern-Report/4-s3log/4.2-event2/",
@@ -169,10 +169,10 @@
 },
 {
 	"uri": "http://localhost:1313/AWS_Intern-Report/5-portfwd/5.3-network-setup/5.3.3-route-table/",
-	"title": "Configure Route Table",
+	"title": "Create RDS DB Subnet Group",
 	"tags": [],
 	"description": "",
-	"content": "Configure Route Table "
+	"content": " Open the Amazon RDS (Aurora) Console. Choose Subnet groups from the navigation pane and click Create DB subnet group. Name: Enter a name for your DB subnet group.\nVPC: Choose the VPC you created earlier. Click Create (or Create subnet).\n"
 },
 {
 	"uri": "http://localhost:1313/AWS_Intern-Report/4-s3log/4.3-event3/",
