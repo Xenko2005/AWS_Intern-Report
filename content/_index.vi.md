@@ -14,8 +14,8 @@ chapter : false
 <p><strong>Email:</strong> trungno3345@gmail.com</p>
 <p><strong>Trường:</strong> Đại Học FPT TP.HCM</p>
 <p><strong>Ngành:</strong> Trí Tuệ Nhân Tạo</p>
-<p><strong>Lớp:</strong> SE196518</p>
-<p><strong>Công Ty Thực Tập:</strong> Công ty TNHH Amazon Web Services Vietnam</p>
+<p><strong>Mã số sinh viên:</strong> SE196518</p>
+<p><strong>Công Ty Thực Tập:</strong> Công ty Bootcamp - First Cloud AI Journey @ AWS Study Group</p>
 <p><strong>Vị Trí Thực Tập:</strong> FCJ Cloud Intern</p>
 <p><strong>Thời Gian Thực Tập:</strong> Từ 05/01/2026 đến 18/04/2026</p>  
 </div>
