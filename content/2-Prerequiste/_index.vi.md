@@ -6,6 +6,8 @@ chapter : false
 pre : " <b> 2. </b> "
 ---
 
+# AnTiScaQ - Hệ Thống Kiểm Tra Lừa Đảo
+
 ## 1. Tóm tắt điều hành
 **AnTiScaQ** là hệ thống kiểm tra nguy cơ lừa đảo trực tuyến, hỗ trợ người dùng phát hiện sớm các dấu hiệu lừa đảo thông qua nhiều loại dữ liệu đầu vào như **số điện thoại, tên miền (domain), và nội dung email** bằng cách xác minh độ uy tín và cảnh báo theo mức độ rủi ro. Hệ thống không đưa ra kết luận pháp lý mà chỉ đóng vai trò cảnh báo, giải thích và hướng dẫn phòng tránh. Hệ thống hoạt động dựa trên việc thu thập dữ liệu, tiếp nhận báo cáo từ cộng đồng và chấm điểm rủi ro.
 

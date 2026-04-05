@@ -6,6 +6,8 @@ chapter : false
 pre : " <b> 2. </b> "
 ---
 
+# AnTiScaQ - Fraud Detection System
+
 ## 1. Executive Summary
 **AnTiScaQ** is an online scam risk-checking system that helps users early detect signs of scams through various input data types such as **phone numbers, domains, and email contents** by verifying credibility and alerting based on risk levels. The system does not provide legal conclusions but serves as a warning, explanation, and prevention guide. The system collects data, receives community reports, and scores risks.
 
