@@ -10,6 +10,8 @@ pre: " <b> 4.1. </b> "
 
 ### Tổng quan Kiến trúc Giải pháp trên AWS
 
+![Networking Session](/AWS_Intern-Report/images/aws_architecture.drawio.png)
+
 **Kiến trúc giải pháp:**
 
 Hệ sinh thái **AnTiScaQ** được thiết kế dựa trên mô hình kiến trúc **Serverless**, tận dụng toàn diện các dịch vụ tinh hoa của nền tảng điện toán đám mây **AWS** nhằm mang lại khả năng mở rộng linh hoạt và **giảm thiểu tối đa chi phí phát sinh**. Bám sát các trụ cột cốt lõi của **AWS Well-Architected Framework**, giải pháp này đảm bảo hệ thống luôn duy trì trạng thái vận hành bền bỉ, an toàn và sẵn sàng đáp ứng tức thì khối lượng truy cập khổng lồ mỗi khi có các chiến dịch lừa đảo bùng phát.

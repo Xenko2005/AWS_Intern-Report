@@ -12,21 +12,21 @@
     <title>Deploy Data Layer :: AWS System Manager</title>
 
     
-    <link href="/AWS_Intern-Report/css/nucleus.css?1775358418" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/fontawesome-all.min.css?1775358418" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/hybrid.css?1775358418" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/featherlight.min.css?1775358418" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/perfect-scrollbar.min.css?1775358418" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/auto-complete.css?1775358418" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/atom-one-dark-reasonable.css?1775358418" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/theme.css?1775358418" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/hugo-theme.css?1775358418" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/nucleus.css?1775555052" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/fontawesome-all.min.css?1775555052" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/hybrid.css?1775555052" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/featherlight.min.css?1775555052" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/perfect-scrollbar.min.css?1775555052" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/auto-complete.css?1775555052" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/atom-one-dark-reasonable.css?1775555052" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/theme.css?1775555052" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/hugo-theme.css?1775555052" rel="stylesheet">
     
-    <link href="/AWS_Intern-Report/css/theme-workshop.css?1775358418" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/theme-workshop.css?1775555052" rel="stylesheet">
     
     
 
-    <script src="/AWS_Intern-Report/js/jquery-3.3.1.min.js?1775358418"></script>
+    <script src="/AWS_Intern-Report/js/jquery-3.3.1.min.js?1775555052"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -138,14 +138,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS_Intern-Report/js/lunr.min.js?1775358418"></script>
-<script type="text/javascript" src="/AWS_Intern-Report/js/auto-complete.js?1775358418"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/lunr.min.js?1775555052"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/auto-complete.js?1775555052"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/AWS_Intern-Report\/";
     
 </script>
-<script type="text/javascript" src="/AWS_Intern-Report/js/search.js?1775358418"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/search.js?1775555052"></script>
 
     
   </div>
@@ -828,13 +828,13 @@
  
   
     
-    <li data-nav-id="/AWS_Intern-Report/5-portfwd/5.3-network-setup/" title="Network Infrastructure Setup" class="dd-item 
+    <li data-nav-id="/AWS_Intern-Report/5-portfwd/5.3-network-setup/" title="Infrastructure Setup" class="dd-item 
         
         
         
         ">
       <a href="/AWS_Intern-Report/5-portfwd/5.3-network-setup/">
-           <b> 4.3. </b> Network Infrastructure Setup
+           <b> 4.3. </b> Infrastructure Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -1666,7 +1666,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color="orange">05-04-2026</font></i>
+        <i><font color="orange">07-04-2026</font></i>
     </left>
     <left>
         <br>
@@ -1745,7 +1745,16 @@
     <div class="wrapper">
         <div id="toc-scroll-wrapper"
             style="max-height: 300px; overflow-y: scroll; overflow-x: hidden; padding-right: 8px;">
-            <nav id="TableOfContents"></nav>
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#implementation-content">Implementation Content</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
         </div>
     </div>
 </div>
@@ -1793,7 +1802,21 @@
 
 
 
-	
+	<h3 id="overview">Overview</h3>
+<p>In this phase, we will establish the storage and knowledge base for the HRM application using Generative AI. This process includes configuring a secure object storage (S3), importing structured data into a high-speed NoSQL database (DynamoDB), and integrating the power of AWS Bedrock to handle RAG (Retrieval-Augmented Generation) data.</p>
+<p>The storage and AI architecture to be established includes:</p>
+<ul>
+<li><strong>Amazon S3 (Simple Storage Service):</strong> Initialize 3 separate buckets with strict security policies (blocking public access, automatic encryption, versioning enabled) to store AI data, reports, and images.</li>
+<li><strong>Amazon DynamoDB:</strong> Create structured data tables automatically by directly importing existing data sources from S3 buckets, saving time on manual schema configuration.</li>
+<li><strong>AWS Bedrock Knowledge Base:</strong> Build the AI ​​brain by directly connecting PDF documents from S3, configuring the Embedding model, and automatically creating a Vector Store so the chatbot can retrieve semantic information.</li>
+</ul>
+<h3 id="implementation-content">Implementation Content</h3>
+<ul>
+<li><a href="5.4.1-security-groups//">Setting up Amazon S3 Bucket</a></li>
+<li><a href="5.4.2-rds//">Importing Data from S3 into DynamoDB</a></li>
+<li><a href="5.4.3-elasticache//">Setting up AWS Bedrock Knowledge Base</a></li>
+</ul>
+
 
 
 
@@ -2633,19 +2656,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS_Intern-Report/js/clipboard.min.js?1775358418"></script>
-    <script src="/AWS_Intern-Report/js/perfect-scrollbar.min.js?1775358418"></script>
-    <script src="/AWS_Intern-Report/js/perfect-scrollbar.jquery.min.js?1775358418"></script>
-    <script src="/AWS_Intern-Report/js/jquery.sticky.js?1775358418"></script>
-    <script src="/AWS_Intern-Report/js/featherlight.min.js?1775358418"></script>
-    <script src="/AWS_Intern-Report/js/highlight.pack.js?1775358418"></script>
+    <script src="/AWS_Intern-Report/js/clipboard.min.js?1775555052"></script>
+    <script src="/AWS_Intern-Report/js/perfect-scrollbar.min.js?1775555052"></script>
+    <script src="/AWS_Intern-Report/js/perfect-scrollbar.jquery.min.js?1775555052"></script>
+    <script src="/AWS_Intern-Report/js/jquery.sticky.js?1775555052"></script>
+    <script src="/AWS_Intern-Report/js/featherlight.min.js?1775555052"></script>
+    <script src="/AWS_Intern-Report/js/highlight.pack.js?1775555052"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS_Intern-Report/js/modernizr.custom-3.6.0.js?1775358418"></script>
-    <script src="/AWS_Intern-Report/js/learn.js?1775358418"></script>
-    <script src="/AWS_Intern-Report/js/hugo-learn.js?1775358418"></script>
+    <script src="/AWS_Intern-Report/js/modernizr.custom-3.6.0.js?1775555052"></script>
+    <script src="/AWS_Intern-Report/js/learn.js?1775555052"></script>
+    <script src="/AWS_Intern-Report/js/hugo-learn.js?1775555052"></script>
 
-    <link href="/AWS_Intern-Report/mermaid/mermaid.css?1775358418" rel="stylesheet" />
-    <script src="/AWS_Intern-Report/mermaid/mermaid.js?1775358418"></script>
+    <link href="/AWS_Intern-Report/mermaid/mermaid.css?1775555052" rel="stylesheet" />
+    <script src="/AWS_Intern-Report/mermaid/mermaid.js?1775555052"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

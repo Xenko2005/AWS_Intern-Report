@@ -11,6 +11,8 @@ pre: " <b> 4.1. </b> "
 
 ### AWS Solution Architecture Overview
 
+![Networking Session](/AWS_Intern-Report/images/aws_architecture.drawio.png)
+
 **Solution Architecture:**
 
 The **AnTiScaQ** ecosystem is built upon a **Serverless** architecture model, comprehensively leveraging the elite services of the **AWS** cloud platform to deliver highly elastic scalability and **drastically minimize operational costs**. Strictly adhering to the core pillars of the **AWS Well-Architected Framework**, this solution ensures the system remains resilient, secure, and ready to instantly handle massive traffic surges during sudden phishing outbreaks.
