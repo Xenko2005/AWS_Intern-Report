@@ -1,71 +1,96 @@
 ---
-title: "Thiết lập Amazon S3 Bucket"
+title: "Thiết lập S3 bucket"
 weight: 1
 chapter: false
 pre: " <b> 4.4.1. </b> "
 ---
 
-### Danh sách các Bucket cần tạo
-
-Bạn sẽ cần tạo 3 bucket với định dạng tên sau (thay thế `ACCOUNT_ID` và `REGION` bằng thông tin thực tế của bạn):
-
-* `rag-data-ACCOUNT_ID-REGION`: Lưu trữ dữ liệu cho model.
-* `user-report-ACCOUNT_ID-REGION`: Lưu trữ hình ảnh báo cáo từ người dùng.
-* `chatbot-image-ACCOUNT_ID-REGION`: Lưu trữ hình ảnh người dùng gửi cho chatbot.
+### Tên các Bucket
+Bạn sẽ cần tạo 3 bucket sau:
+* `rag-data-ACCOUNT_ID-REGION` : Lưu trữ dữ liệu cho mô hình (model)
+* `user-report-ACCOUNT_ID-REGION` : Lưu trữ hình ảnh báo cáo của người dùng
+* `chatbot-image-ACCOUNT_ID-REGION` : Lưu trữ hình ảnh người dùng gửi cho chatbot
 
 ---
 
-### Hướng dẫn tạo Bucket
+### Hướng dẫn chi tiết
 
 **1. Mở Amazon S3 Console**
-* Truy cập trực tiếp qua liên kết: [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/)
-* Hoặc điều hướng từ menu: **AWS Management Console** → **Services** → **S3**.
+* Truy cập vào [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/)
+* Hoặc: **AWS Management Console** → **Services** → **S3**
 
 ![Networking Session](/AWS_Intern-Report/images/picture5.jpg)
 
-**2. Bắt đầu tạo**
-* Nhấp vào nút **Create bucket**.
+**2. Nhấn nút "Create bucket" (Tạo bucket)**
 
-**3. General configuration (Cấu hình chung)**
-* **Bucket name:** Nhập tên bucket (Ví dụ: `rag-data-123456789012-us-east-1`).
-* **AWS Region:** Chọn khu vực đích của bạn (Ví dụ: *US East (N. Virginia) us-east-1*).
+**3. Cấu hình chung (General configuration):**
+* **Bucket name:** Nhập `rag-data-ACCOUNT_ID-REGION`
+  * *Ví dụ:* `rag-data-123456789012-us-east-1`
+* **AWS Region:** Chọn vùng mục tiêu của bạn (Ví dụ: *US East (N. Virginia) us-east-1*)
 
 ![Networking Session](/AWS_Intern-Report/images/picture6.jpg)
 
-**4. Object Ownership**
-* Giữ tùy chọn mặc định: **ACLs disabled (recommended)**.
+**4. Quyền sở hữu đối tượng (Object Ownership):**
+* Giữ mặc định: **ACLs disabled (recommended)**
 
-**5. Block Public Access settings for this bucket**
-* Tích chọn **Block all public access**.
-* Đảm bảo tất cả 4 tùy chọn phụ bên dưới đều được đánh dấu (✓):
-    * ✓ Block public access to buckets and objects granted through *new* access control lists (ACLs)
-    * ✓ Block public access to buckets and objects granted through *any* access control lists (ACLs)
-    * ✓ Block public access to buckets and objects granted through *new* public bucket or access point policies
-    * ✓ Block public and cross-account access to buckets and objects through *any* public bucket or access point policies
+**5. Cài đặt Chặn truy cập công khai (Block Public Access):**
+* Tích chọn **"Block all public access"**
+* Đảm bảo cả 4 tùy chọn con đều được chọn:
+  * ✓ Block public access to buckets and objects granted through *new* access control lists (ACLs)
+  * ✓ Block public access to buckets and objects granted through *any* access control lists (ACLs)
+  * ✓ Block public access to buckets and objects granted through *new* public bucket or access point policies
+  * ✓ Block public and cross-account access to buckets and objects through *any* public bucket or access point policies
 
-**6. Bucket Versioning**
-* Chọn **Enable** (Kích hoạt).
+**6. Quản lý phiên bản (Bucket Versioning):**
+* Chọn **"Enable"** (Bật)
 
 ![Networking Session](/AWS_Intern-Report/images/picture7.jpg)
 
-**7. Tags (Tùy chọn)**
-* Thêm các thẻ đánh dấu nếu muốn (Ví dụ: `Key=Purpose`, `Value=IncidentResponse`).
+**7. Thẻ - Tags (tùy chọn):**
+* Thêm thẻ nếu muốn
+* *Ví dụ:* `Key=Purpose`, `Value=IncidentResponse`
 
-**8. Default encryption (Mã hóa mặc định)**
-* **Encryption type:** Chọn **Server-side encryption with Amazon S3 managed keys (SSE-S3)**.
-* **Bucket Key:** Giữ tùy chọn mặc định (**Enabled**).
+**8. Mã hóa mặc định (Default encryption):**
+* **Encryption type:** Chọn **"Server-side encryption with Amazon S3 managed keys (SSE-S3)"**
+* **Bucket Key:** Giữ mặc định (**Enabled**)
 
-**9. Advanced settings**
-* Giữ nguyên tất cả các cài đặt mặc định.
+**9. Cài đặt nâng cao (Advanced settings):**
+* Giữ tất cả mặc định
 
-**10. Hoàn tất**
-* Kéo xuống cuối trang và nhấp vào **Create bucket**.
+**10. Nhấn "Create bucket"**
 
 ![Networking Session](/AWS_Intern-Report/images/picture8.jpg)
 
-**11. Xác minh**
-* Bạn sẽ thấy thông báo tạo thành công và bucket mới sẽ xuất hiện trong danh sách S3 buckets của bạn.
+**11. Xác nhận tạo bucket:**
+* Bạn sẽ thấy thông báo thành công
+* Bucket sẽ xuất hiện trong danh sách S3 bucket của bạn
 
-> **Lưu ý quan trọng:** Hãy lặp lại các bước từ 2 đến 11 cho 2 bucket còn lại (`user-report-ACCOUNT_ID-REGION` và `chatbot-image-ACCOUNT_ID-REGION`).
+> **Lưu ý:** Lặp lại các bước từ 2-11 cho 2 bucket còn lại:
+> * `user-report-ACCOUNT_ID-REGION`
+> * `chatbot-image-ACCOUNT_ID-REGION`
 
 ![Networking Session](/AWS_Intern-Report/images/picture9.jpg)
+
+**12. Tạo Quy tắc Vòng đời (Lifecycle Rule):**
+- Chọn bucket `chatbot-image-ACCOUNT_ID-REGION` và vào tab **Management**.
+- Nhấn **Create lifecycle rule**.
+![Networking Session](/AWS_Intern-Report/images/CreateLifecycleRule.png)
+
+
+**13. Tên và Phạm vi:**
+- Nhập tên quy tắc (Ví dụ: `AutoDeleteAfter1Day`).
+- Chọn **Apply to all objects in the bucket** (và xác nhận cảnh báo).
+![Networking Session](/AWS_Intern-Report/images/CreateLifecycleRule2.png)
+
+**14. Hết hạn phiên bản hiện tại của đối tượng (Expire current versions of objects)**
+- **Days after object creation:** 1 ngày.
+
+**15. Xóa vĩnh viễn các phiên bản cũ của đối tượng (Permanently delete noncurrent versions of objects)**
+- **Days after objects become noncurrent:** 1 ngày.
+
+**16. Xóa các dấu đánh dấu xóa hết hạn hoặc các tệp tải lên dở dang (Delete expired object delete markers or incomplete multipart uploads)**
+- Chọn **Delete incomplete multipart uploads**.
+- **Number of days:** 1 ngày.
+![Networking Session](/AWS_Intern-Report/images/CreateLifecycleRule3.png)
+
+**17. Nhấn "Create lifecycle rule" để hoàn tất.**

@@ -70,3 +70,25 @@ You will need to create 3 buckets:
 > * `chatbot-image-ACCOUNT_ID-REGION`
 
 ![Networking Session](/AWS_Intern-Report/images/picture9.jpg)
+
+**12. Create Lifecycle Rule:**
+- Select `chatbot-image-ACCOUNT_ID-REGION` and go to the Management tab.
+- Click Create lifecycle rule.
+![Networking Session](/AWS_Intern-Report/images/CreateLifecycleRule.png)
+
+
+**13. Name and Scope:**
+ - Enter a rule name (e.g., AutoDeleteAfter1Day).
+ - Select Apply to all objects in the bucket (and acknowledge the warning).
+![Networking Session](/AWS_Intern-Report/images/CreateLifecycleRule2.png)
+**14. Expire current versions of objects**
+- Days after object creation: 1 day.
+
+**15. Permanently delete noncurrent versions of objects**
+- Days after objects become noncurrent: 1 day.
+
+**16. Delete expired object delete markers or incomplete multipart uploads**
+- Select Delete incomplete multipart uploads.
+- Number of days: 1 day.
+![Networking Session](/AWS_Intern-Report/images/CreateLifecycleRule3.png)
+**17. Create lifecycle rule**
