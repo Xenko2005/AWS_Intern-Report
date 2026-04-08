@@ -161,18 +161,6 @@
                 href="http://localhost:1313/AWS_Intern-Report/vi/2-prerequiste/"
                 />
   </url><url>
-    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.2-prerequisites/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.2-prerequisites/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.2-prerequisites/"
-                />
-  </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.5-deploy-app/5.5.2-beanstalk/</loc>
     <xhtml:link
                 rel="alternate"
@@ -183,6 +171,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.5-deploy-app/5.5.2-beanstalk/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.2-prerequisites/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.2-prerequisites/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.2-prerequisites/"
                 />
   </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.4-data-layer/5.4.2-rds/</loc>

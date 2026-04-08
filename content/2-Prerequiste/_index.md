@@ -223,7 +223,7 @@ This is the cloud architecture diagram of the system:
 
 The **AnTiScaQ** system with a **Hybrid Cloud-Native** architecture provides:
 
-* **Ultra-Optimized Costs:** Extremely economical operation, only about **~$27.43/month** for the entire system.
+* **Ultra-Optimized Costs:** Extremely economical operation, only about **~$42.59/month** for the entire system.
 * **No upfront cost:** Maximizes AWS Free Tier and in-house team resources, requiring absolutely zero initial hardware investment.
 * **Massive ROI:** Completely eliminates the dependence and high costs of purchasing APIs from enterprise Threat Intel platforms.
 * **Scalable:** Flexible Auto Scaling capabilities (Beanstalk) combined with Serverless (Lambda), seamlessly handling traffic explosions caused by phishing campaigns.

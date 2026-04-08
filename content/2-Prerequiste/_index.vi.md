@@ -223,7 +223,7 @@ pre : " <b> 2. </b> "
 
 Hệ thống **AnTiScaQ** với kiến trúc **Hybrid Cloud-Native** cung cấp:
 
-* **Chi phí siêu tối ưu:** Vận hành cực kỳ tiết kiệm, chỉ khoảng **~$27.43/tháng** cho toàn bộ hệ thống.
+* **Chi phí siêu tối ưu:** Vận hành cực kỳ tiết kiệm, chỉ khoảng **~$42.59/tháng** cho toàn bộ hệ thống.
 * **No upfront cost:** Tận dụng tối đa AWS Free Tier và nguồn lực in-house, hoàn toàn không tốn chi phí đầu tư phần cứng ban đầu.
 * **ROI khủng:** Loại bỏ hoàn toàn sự phụ thuộc và chi phí đắt đỏ khi phải mua API từ các nền tảng Threat Intel doanh nghiệp.
 * **Scalable:** Khả năng Auto Scaling linh hoạt (Beanstalk) kết hợp Serverless (Lambda), xử lý mượt mà khi traffic bùng nổ do các chiến dịch phishing.
