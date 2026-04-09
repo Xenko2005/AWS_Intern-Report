@@ -18,16 +18,14 @@ This workshop provides detailed instructions on deploying **AnTiScaQ**, an **ant
 
 **4.2.** [Prerequisites](5.2-prerequisites/)
 
-**4.3.** [Network Infrastructure Setup](5.3-network-setup/)
+**4.3.** [Infrastructure Setup](5.3-network-setup/)
 
-**4.4.** [Deploy Data Layer](5.4-data-layer/)
+**4.4.** [Data Layer Deployment](5.4-data-layer/)
 
-**4.5.** [Deploy Application](5.5-deploy-app/)
+**4.5.** [Application Deployment](5.5-deploy-app/)
 
-**4.6.** [Automate CI/CD](5.6-cicd/)
+**4.6.** [Optimization & Security](5.6-cicd/)
 
-**4.7.** [Optimization & Security](5.7-security/)
+**4.7.** [Monitoring & Operation](5.7-security/)
 
-**4.8.** [Monitoring & Operations](5.8-monitoring/)
-
-**4.9.** [Clean up resources](5.9-cleanup/)
+**4.8.** [Resource Cleaning](5.8-monitoring/)

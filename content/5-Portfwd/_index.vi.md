@@ -18,16 +18,14 @@ Workshop này hướng dẫn chi tiết cách triển khai **AnTiScaQ**, một n
 
 **4.2.** [Điều kiện tiên quyết](5.2-prerequisites/)
 
-**4.3.** [Thiết lập cơ sở hạ tầng mạng](5.3-network-setup/)
+**4.3.** [Thiết lập cơ sở hạ tầng](5.3-network-setup/)
 
 **4.4.** [Triển khai tầng dữ liệu](5.4-data-layer/)
 
 **4.5.** [Triển khai ứng dụng](5.5-deploy-app/)
 
-**4.6.** [Tự động hóa CI/CD](5.6-cicd/)
+**4.6.** [Tối ưu hóa & Bảo mật](5.6-cicd/)
 
-**4.7.** [Tối ưu hóa & Bảo mật](5.7-security/)
+**4.7.** [Giám sát & vận hành](5.7-security/)
 
-**4.8.** [Giám sát & Vận hành](5.8-monitoring/)
-
-**4.9.** [Dọn dẹp tài nguyên](5.9-cleanup/)
+**4.8.** [Dọn dẹp tài nguyên](5.8-monitoring/)
