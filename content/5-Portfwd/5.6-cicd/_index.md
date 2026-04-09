@@ -20,4 +20,4 @@ For a system like **AnTiScaQ**, ensuring **high availability** and **robust secu
     * Prevent attack attempts exploiting vulnerabilities such as **SQL Injection**, **XSS**, and other unauthorized intrusion methods.
     
 ### Implementation Content
-* [Configure S3 & CloudFront & WAF](5.7.1-cloudfront//)
+* [Configure S3 & CloudFront & WAF](5.6.1-codebuild//)

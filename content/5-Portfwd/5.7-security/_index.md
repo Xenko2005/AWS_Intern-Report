@@ -14,4 +14,4 @@ In this module, we will build a centralized operations management system for **A
 * **Amazon SNS (Simple Notification Service):** A reliable communication channel connecting the monitoring system with the administrative team. When metrics exceed safe thresholds or a service failure occurs, the system automatically triggers **Email** notifications for timely intervention.
 
 ### Implementation Content
-* [Monitor with CloudWatch](5.8.1-cloudwatch//)
+* [Monitor with CloudWatch](5.7.1-cloudfront///)

@@ -20,4 +20,4 @@ pre: " <b> 4.6. </b> "
     * Ngăn chặn các nỗ lực tấn công khai thác lỗ hổng như **SQL Injection**, **XSS** và các hình thức xâm nhập trái phép vào hệ thống **AnTiScaQ**.
 
 ### Nội dung thực hiện
-* [Cấu hình S3 & CloudFront & WAF](5.7.1-cloudfront//)
+* [Cấu hình S3 & CloudFront & WAF](5.6.1-codebuild//)

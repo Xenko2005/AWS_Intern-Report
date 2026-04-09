@@ -14,4 +14,4 @@ Trong phần này, chúng ta sẽ xây dựng hệ thống quản lý vận hàn
 * **Amazon SNS (Simple Notification Service):** Kênh truyền tin cậy giúp kết nối hệ thống giám sát với đội ngũ quản trị. Khi có chỉ số vượt ngưỡng an toàn hoặc xảy ra lỗi dịch vụ, hệ thống sẽ tự động kích hoạt thông báo qua **Email** để xử lý kịp thời.
 
 ### Nội dung thực hiện
-* [Giám sát với CloudWatch](5.8.1-cloudwatch//)
+* [Giám sát với CloudWatch](5.7.1-cloudfront///)
