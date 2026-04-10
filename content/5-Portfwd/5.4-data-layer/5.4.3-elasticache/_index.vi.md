@@ -30,3 +30,5 @@ pre: " <b> 4.4.3. </b> "
    - Chọn *Quick create a new vector store* (Tạo nhanh lưu trữ vector mới).
    - **Loại lưu trữ vector:** Chọn *Amazon S3 vector*.
 9. Nhấp vào nút **'Create knowledge base'** (Tạo cơ sở tri thức).
+10. Truy cập vào knowledge base vừa tạo và ấn sync
+![Networking Session](/AWS_Intern-Report/images/knowledgebase.png)

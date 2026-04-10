@@ -29,3 +29,5 @@ pre: " <b> 4.4.3. </b> "
    - Choose *Quick create a new vector store*.
    - **Vector store type:** Choose *Amazon S3 vector*.
 9. Click **'Create knowledge base'**.
+10. Choose knowledge base created and click sync
+![Networking Session](/AWS_Intern-Report/images/knowledgebase.png)

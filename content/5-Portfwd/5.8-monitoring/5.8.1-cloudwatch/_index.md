@@ -5,8 +5,7 @@ chapter: false
 pre: " <b> 4.8.1. </b> "
 ---
 
-### Clean up resources
-
+# Clean up resources
 To avoid unexpected costs after completing the Workshop, delete resources in the following order:
 
 **1. VPC**: Go to VPC, choose VPC for this application, click **Delete**
@@ -28,17 +27,23 @@ Uncheck **Create final snapshot**, **Retain automated backups**, check **I ackno
 
 ![Cleanup Session](/AWS_Intern-Report/images/deleteelb.png)
 
-**5. S3 Bucket**: Go to S3, tab **General purpose buckets**, choose the bucket hold frontend. Click **Delete**
+**5.**DynamoDB**: Choose table -> Delete
+![Clean Session](/AWS_Intern-Report/images/delete_dynamo.png)
 
-![Cleanup Session](/AWS_Intern-Report/images/deletes3fe.png)
+**6. Bedrock Knowledge Base**: Choose knowledge base -> Delete
+![Clean Session](/AWS_Intern-Report/images/deletekb.png)
 
-**6. Cloudfront**: Go to Cloudfront, choose distribution. Choose **Disable**, then **Delete**
+**6. **S3**: Choose bucket -> Empty bucket -> Delete
+![Clean Session](/AWS_Intern-Report/images/delete_s3.png)
+
+**8. Cloudfront**: Go to Cloudfront, choose distribution. Choose **Disable**, then **Delete**
 
 ![Cleanup Session](/AWS_Intern-Report/images/deletecloudfront.png)
 
-**7. CloudWatch**: Go to CloudWatch, tab **Alarms**, choose the alarm just set, click **Delete**
+**9. CloudWatch**: Go to CloudWatch, tab **Alarms**, choose the alarm just set, click **Delete**
 
 ![Cleanup Session](/AWS_Intern-Report/images/deletecloudwatch.png)
+
 
 
 
