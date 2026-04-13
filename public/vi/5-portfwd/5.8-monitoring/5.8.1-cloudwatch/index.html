@@ -12,21 +12,21 @@
     <title>Dọn dẹp tài nguyên :: AWS System Manager</title>
 
     
-    <link href="/AWS_Intern-Report/css/nucleus.css?1775720107" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/fontawesome-all.min.css?1775720107" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/hybrid.css?1775720107" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/featherlight.min.css?1775720107" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/perfect-scrollbar.min.css?1775720107" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/auto-complete.css?1775720107" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/atom-one-dark-reasonable.css?1775720107" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/theme.css?1775720107" rel="stylesheet">
-    <link href="/AWS_Intern-Report/css/hugo-theme.css?1775720107" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/nucleus.css?1776065007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/fontawesome-all.min.css?1776065007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/hybrid.css?1776065007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/featherlight.min.css?1776065007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/perfect-scrollbar.min.css?1776065007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/auto-complete.css?1776065007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/atom-one-dark-reasonable.css?1776065007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/theme.css?1776065007" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/hugo-theme.css?1776065007" rel="stylesheet">
     
-    <link href="/AWS_Intern-Report/css/theme-workshop.css?1775720107" rel="stylesheet">
+    <link href="/AWS_Intern-Report/css/theme-workshop.css?1776065007" rel="stylesheet">
     
     
 
-    <script src="/AWS_Intern-Report/js/jquery-3.3.1.min.js?1775720107"></script>
+    <script src="/AWS_Intern-Report/js/jquery-3.3.1.min.js?1776065007"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -138,14 +138,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS_Intern-Report/js/lunr.min.js?1775720107"></script>
-<script type="text/javascript" src="/AWS_Intern-Report/js/auto-complete.js?1775720107"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/lunr.min.js?1776065007"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/auto-complete.js?1776065007"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/AWS_Intern-Report\/\/vi";
     
 </script>
-<script type="text/javascript" src="/AWS_Intern-Report/js/search.js?1775720107"></script>
+<script type="text/javascript" src="/AWS_Intern-Report/js/search.js?1776065007"></script>
 
     
   </div>
@@ -1666,7 +1666,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color="orange">09-04-2026</font></i>
+        <i><font color="orange">13-04-2026</font></i>
     </left>
     <left>
         <br>
@@ -1751,15 +1751,7 @@
     <div class="wrapper">
         <div id="toc-scroll-wrapper"
             style="max-height: 300px; overflow-y: scroll; overflow-x: hidden; padding-right: 8px;">
-            <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#các-bước-dọn-dẹp">Các bước dọn dẹp</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+            <nav id="TableOfContents"></nav>
         </div>
     </div>
 </div>
@@ -1807,23 +1799,27 @@
 
 
 
-	<h3 id="các-bước-dọn-dẹp">Các bước dọn dẹp</h3>
-<p>Để tránh phát sinh chi phí không mong muốn sau khi hoàn thành Workshop, hãy xóa tài nguyên theo thứ tự sau:</p>
-<p><strong>1. VPC</strong>: Truy cập VPC, chọn VPC của ứng dụng, nhấn <strong>Delete</strong></p>
+	<h1 id="dọn-dẹp-tài-nguyên">Dọn dẹp tài nguyên</h1>
+<p>Để tránh phát sinh chi phí ngoài ý muốn sau khi hoàn thành Workshop, hãy xóa các tài nguyên theo thứ tự sau:</p>
+<p><strong>1. VPC</strong>: Đi tới VPC, chọn VPC của ứng dụng này, nhấn <strong>Delete</strong></p>
 <p><img src="/AWS_Intern-Report/images/deletevpc.png" alt="Cleanup Session"></p>
-<p><strong>2. RDS for MySQL</strong>: Truy cập RDS, tab <strong>Databases</strong>, chọn database, nhấn <strong>Delete</strong>.<br>
-Bỏ tick <strong>Create final snapshot</strong>, <strong>Retain automated backups</strong>, tick <strong>I acknowledge &hellip;</strong></p>
+<p><strong>2. RDS for MySQL</strong>: Đi tới RDS, tab Databases, chọn database, nhấn <strong>Delete</strong>.
+Bỏ chọn <strong>Create final snapshot</strong>, <strong>Retain automated backups</strong>, tích chọn <strong>I acknowledge &hellip;</strong></p>
 <p><img src="/AWS_Intern-Report/images/deleterds.png" alt="Cleanup Session"></p>
 <p><img src="/AWS_Intern-Report/images/deleterds1.png" alt="Cleanup Session"></p>
-<p><strong>3. ECR</strong>: Truy cập ECR, tab <strong>Repositories</strong>, chọn repository chứa Docker image của ứng dụng, nhấn <strong>Delete</strong></p>
+<p><strong>3. ECR</strong>: Đi tới ECR, tab <strong>Repositories</strong>, chọn repository chứa docker image của ứng dụng. Nhấn <strong>Delete</strong></p>
 <p><img src="/AWS_Intern-Report/images/deleteecr.png" alt="Cleanup Session"></p>
-<p><strong>4. Elastic Beanstalk</strong>: Truy cập Elastic Beanstalk, tab <strong>Environments</strong>, chọn environment, sau đó nhấn <strong>Terminate environment</strong></p>
+<p><strong>4. Elastic Beanstalk</strong>: Đi tới Elastic Beanstalk, tab <strong>Environments</strong>, chọn environment. Sau đó, nhấn <strong>Terminate environment</strong></p>
 <p><img src="/AWS_Intern-Report/images/deleteelb.png" alt="Cleanup Session"></p>
-<p><strong>5. S3 Bucket</strong>: Truy cập S3, tab <strong>General purpose buckets</strong>, chọn bucket chứa frontend, nhấn <strong>Delete</strong></p>
-<p><img src="/AWS_Intern-Report/images/deletes3fe.png" alt="Cleanup Session"></p>
-<p><strong>6. CloudFront</strong>: Truy cập CloudFront, chọn distribution, chọn <strong>Disable</strong>, sau đó <strong>Delete</strong></p>
+<p><strong>5. DynamoDB</strong>: Chọn table -&gt; Delete
+<img src="/AWS_Intern-Report/images/delete_dynamo.png" alt="Clean Session"></p>
+<p><strong>6. Bedrock Knowledge Base</strong>: Chọn knowledge base -&gt; Delete
+<img src="/AWS_Intern-Report/images/deletekb.png" alt="Clean Session"></p>
+<p><strong>7. S3</strong>: Chọn bucket -&gt; Empty bucket -&gt; Delete
+<img src="/AWS_Intern-Report/images/delete_s3.png" alt="Clean Session"></p>
+<p><strong>8. Cloudfront</strong>: Đi tới Cloudfront, chọn distribution. Chọn <strong>Disable</strong>, sau đó nhấn <strong>Delete</strong></p>
 <p><img src="/AWS_Intern-Report/images/deletecloudfront.png" alt="Cleanup Session"></p>
-<p><strong>7. CloudWatch</strong>: Truy cập CloudWatch, tab <strong>Alarms</strong>, chọn alarm đã tạo, nhấn <strong>Delete</strong></p>
+<p><strong>9. CloudWatch</strong>: Đi tới CloudWatch, tab <strong>Alarms</strong>, chọn alarm vừa thiết lập, nhấn <strong>Delete</strong></p>
 <p><img src="/AWS_Intern-Report/images/deletecloudwatch.png" alt="Cleanup Session"></p>
 
 
@@ -2666,19 +2662,19 @@ Bỏ tick <strong>Create final snapshot</strong>, <strong>Retain automated backu
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS_Intern-Report/js/clipboard.min.js?1775720107"></script>
-    <script src="/AWS_Intern-Report/js/perfect-scrollbar.min.js?1775720107"></script>
-    <script src="/AWS_Intern-Report/js/perfect-scrollbar.jquery.min.js?1775720107"></script>
-    <script src="/AWS_Intern-Report/js/jquery.sticky.js?1775720107"></script>
-    <script src="/AWS_Intern-Report/js/featherlight.min.js?1775720107"></script>
-    <script src="/AWS_Intern-Report/js/highlight.pack.js?1775720107"></script>
+    <script src="/AWS_Intern-Report/js/clipboard.min.js?1776065007"></script>
+    <script src="/AWS_Intern-Report/js/perfect-scrollbar.min.js?1776065007"></script>
+    <script src="/AWS_Intern-Report/js/perfect-scrollbar.jquery.min.js?1776065007"></script>
+    <script src="/AWS_Intern-Report/js/jquery.sticky.js?1776065007"></script>
+    <script src="/AWS_Intern-Report/js/featherlight.min.js?1776065007"></script>
+    <script src="/AWS_Intern-Report/js/highlight.pack.js?1776065007"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS_Intern-Report/js/modernizr.custom-3.6.0.js?1775720107"></script>
-    <script src="/AWS_Intern-Report/js/learn.js?1775720107"></script>
-    <script src="/AWS_Intern-Report/js/hugo-learn.js?1775720107"></script>
+    <script src="/AWS_Intern-Report/js/modernizr.custom-3.6.0.js?1776065007"></script>
+    <script src="/AWS_Intern-Report/js/learn.js?1776065007"></script>
+    <script src="/AWS_Intern-Report/js/hugo-learn.js?1776065007"></script>
 
-    <link href="/AWS_Intern-Report/mermaid/mermaid.css?1775720107" rel="stylesheet" />
-    <script src="/AWS_Intern-Report/mermaid/mermaid.js?1775720107"></script>
+    <link href="/AWS_Intern-Report/mermaid/mermaid.css?1776065007" rel="stylesheet" />
+    <script src="/AWS_Intern-Report/mermaid/mermaid.js?1776065007"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

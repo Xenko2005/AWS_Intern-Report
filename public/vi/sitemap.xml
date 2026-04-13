@@ -28,18 +28,6 @@
                 href="http://localhost:1313/AWS_Intern-Report/vi/1-introduce/"
                 />
   </url><url>
-    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.9-cleanup/5.9.1-cleanup-steps/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.9-cleanup/5.9.1-cleanup-steps/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.9-cleanup/5.9.1-cleanup-steps/"
-                />
-  </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.6-cicd/5.6.1-codebuild/</loc>
     <xhtml:link
                 rel="alternate"
@@ -219,18 +207,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.3-network-setup/5.3.2-nat-gateway/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.7-security/5.7.2-waf/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.7-security/5.7.2-waf/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.7-security/5.7.2-waf/"
                 />
   </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/1-introduce/1.2-week2/</loc>
@@ -489,18 +465,6 @@
                 href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.7-security/"
                 />
   </url><url>
-    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.8-monitoring/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.8-monitoring/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.8-monitoring/"
-                />
-  </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/1-introduce/1.8-week8/</loc>
     <xhtml:link
                 rel="alternate"
@@ -513,16 +477,16 @@
                 href="http://localhost:1313/AWS_Intern-Report/vi/1-introduce/1.8-week8/"
                 />
   </url><url>
-    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.9-cleanup/</loc>
+    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.8-monitoring/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.9-cleanup/"
+                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.8-monitoring/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.9-cleanup/"
+                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.8-monitoring/"
                 />
   </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/1-introduce/1.9-week9/</loc>
@@ -583,6 +547,42 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.6-cicd/5.6.2-codepipeline/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.7-security/5.7.2-waf/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.7-security/5.7.2-waf/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.7-security/5.7.2-waf/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.9-cleanup/5.9.1-cleanup-steps/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.9-cleanup/5.9.1-cleanup-steps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.9-cleanup/5.9.1-cleanup-steps/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.9-cleanup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/AWS_Intern-Report/5-portfwd/5.9-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/AWS_Intern-Report/vi/5-portfwd/5.9-cleanup/"
                 />
   </url><url>
     <loc>http://localhost:1313/AWS_Intern-Report/vi/categories/</loc>

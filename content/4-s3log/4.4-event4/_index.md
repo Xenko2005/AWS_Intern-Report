@@ -11,7 +11,7 @@ pre: " <b> 3.4. </b> "
 
 ---
 
-### Event Introduction
+### About the Event
 
 The "Cloud Mastery 2026 - #2" event brought in-depth knowledge about cloud infrastructure automation, container orchestration, and solutions for building highly fault-tolerant systems. Across three sessions, experts guided attendees in detail on how to deploy Infrastructure as Code (IaC), build microservices architectures with Kubernetes, and leverage the power of the Elixir language to optimize performance and operational costs.
 
