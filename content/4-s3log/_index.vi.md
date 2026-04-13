@@ -50,10 +50,10 @@ Trong quá trình thực tập, em đã tham gia 5 events, với mỗi event là
 
 
 ### [Event 5](4.5-Event5/)
-&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #3 – Security Pillar Workshop 
+&emsp;**Tên sự kiện:** Cloud Mastery 2026 #3 
 
-&emsp;**Thời gian:** 09:00 ngày 29/11/2025
+&emsp;**Thời gian:** 09:00 ngày 11/04/2026
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** Lô E2a-7, Đường D1, Khu Công nghệ cao, P. Long Thạnh Mỹ, TP. Thủ Đức, TP.HCM
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
