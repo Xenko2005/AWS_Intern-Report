@@ -170,7 +170,7 @@ This is the cloud architecture diagram of the system:
 | **Amazon DynamoDB** | On-demand, 5GB storage, 1M reads, 0.5M write | $0.5 |
 | **Amazon S3 Vectors** | 2GB data, PUT/GET | $0.60 |
 | **Amazon Bedrock** | Model: Claude Haiku 3, Input Token: 6GB, Output Token: 4GB | $6.5 |
-| **Amazon CloudFront** | 10GB transfer, 200K requests | $1.00 |
+| **Amazon CloudFront** | 10GB transfer, 200K requests | $0 |
 | **Amazon Route 53** | 1 hosted zone | $0.90 |
 | **Amazon CloudWatch**| Basic logs and Auth | $0 *(Free tier)* |
 | **AWS Secrets Manager**| Proxy key management | $0.4 |
@@ -178,7 +178,7 @@ This is the cloud architecture diagram of the system:
 | **Amazon Cognito** | 1000 MAU | $0 |
 ↳ Free tier: < 50K MAU
 | **Amazon RDS for MySQL** | instance db.t4g.micro, gp3 | $21.01 |
-| | **TOTAL AWS/MONTH** | **~$42.59** |
+| | **TOTAL AWS/MONTH** | **~$41.59** |
 
 
 ## 7. Risk Assessment & Mitigation
@@ -223,7 +223,7 @@ This is the cloud architecture diagram of the system:
 
 The **AnTiScaQ** system with a **Hybrid Cloud-Native** architecture provides:
 
-* **Ultra-Optimized Costs:** Extremely economical operation, only about **~$42.59/month** for the entire system.
+* **Ultra-Optimized Costs:** Extremely economical operation, only about **~$41.59/month** for the entire system.
 * **No upfront cost:** Maximizes AWS Free Tier and in-house team resources, requiring absolutely zero initial hardware investment.
 * **Massive ROI:** Completely eliminates the dependence and high costs of purchasing APIs from enterprise Threat Intel platforms.
 * **Scalable:** Flexible Auto Scaling capabilities (Beanstalk) combined with Serverless (Lambda), seamlessly handling traffic explosions caused by phishing campaigns.
